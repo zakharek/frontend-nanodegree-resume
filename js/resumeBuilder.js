@@ -37,6 +37,10 @@ for (var i = 0; i < bio.skills.length; i++) {
 	$("#skills").append(formattedSkill);
 }
 
+displayWork();
+ProjectDisplay();
+EducationDisplay();
+
 function displayWork() {
 
 	for (var i = 0; i < work.jobs.length; i++) {
@@ -59,18 +63,6 @@ function displayWork() {
 	}	
 }	
 
-displayWork();
-
-//function locationizer(work_obj) {
-   //var locationArray = [];
-
-    //for (var i = 0; i < work_obj.jobs.length; i++) {
-       // var newLocation = work_obj.jobs[i].location;
-       // locationArray.push(newLocation);
-   // }
-
-  //  return locationArray;
-
   function ProjectDisplay() {
   	for (var i = 0; i < projects.projects.length; i++) {
 
@@ -89,8 +81,6 @@ displayWork();
   		$(".project-entry:last").append(formattedProjectImage);
   	}
 }
-
-ProjectDisplay();
 
 function EducationDisplay() {
 
@@ -138,12 +128,5 @@ function EducationDisplay() {
 	} 
 }
 
-EducationDisplay();
 
-/*function getFormattedName(name) {
-    var names = name.trim().split(" ");
-    names[1] = names[1].toUpperCase();
-    names[0] = names[0].slice(0,1).toUpperCase() + names[0].slice(1).toLowerCase();
-       
-    return name[0] + " " + name[1];
-}*/
+
