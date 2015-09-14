@@ -63,7 +63,7 @@ function displayWork() {
 	}	
 }	
 
-  function ProjectDisplay() {
+function ProjectDisplay() {
   	for (var i = 0; i < projects.projects.length; i++) {
 
   		var project = projects.projects[i];
@@ -92,7 +92,7 @@ function EducationDisplay() {
 		var formattedSchoolName = HTMLschoolName.replace("%data%",university.name);
 		var formattedDegree = HTMLschoolDegree.replace("%data%",university.degree);
 
-		var formattedSchoolNameDegree = formattedSchoolName+formattedDegree;
+		var formattedSchoolNameDegree = formattedSchoolName + formattedDegree;
 		$(".education-entry:last").append(formattedSchoolNameDegree);
 
 		var formattedSchoolDates = HTMLschoolDates.replace("%data%",university.dates);
@@ -117,7 +117,7 @@ function EducationDisplay() {
 		var formattedonlineTitle = HTMLonlineTitle.replace("%data%",onlineCourse.title);
 		var formattedonlineSchool = HTMLonlineSchool.replace("%data%",onlineCourse.school);
 
-		var formattedonlineTitleSchool = formattedonlineTitle+formattedonlineSchool;
+		var formattedonlineTitleSchool = formattedonlineTitle + formattedonlineSchool;
 		$(".education-online:last").append(formattedonlineTitleSchool);
 
 		var formattedonlineDates = HTMLonlineDates.replace("%data%",onlineCourse.dates);
@@ -127,6 +127,3 @@ function EducationDisplay() {
 		$(".education-online:last").append(formattedonlineURL);
 	} 
 }
-
-
-
