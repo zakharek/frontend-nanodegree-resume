@@ -1,3 +1,5 @@
+'use strict';
+
 var bio = {
 	"name": "Ekaterina Zakharova",
 	"role": "Web-developer",
@@ -10,7 +12,7 @@ var bio = {
 	"welcomeMessage": "Lorem ipsum dolor sit amet, te populo splendide interpretaris vix, an eos praesent pericula reprehendunt.",
 	"skills": ["HTML", "CSS", "JS", "Python"],
 	"bioPic": "images/my_picture.jpg"
-}
+};
 
 var education = {
 	"universities": [
@@ -43,7 +45,7 @@ var education = {
 		"URL": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"	
 	}
 	]
-}
+};
 
 var work = {
 	"jobs": [
@@ -62,9 +64,9 @@ var work = {
 		"description": "Lorem ipsum dolor sit amet, te populo splendide interpretaris vix, an eos praesent pericula reprehendunt. Utroque laboramus est id. Postea semper eos ut, elit nobis postulant at eam. Error graecis recteque ut qui, populo alienum id usu. Pri eu simul zril, urbanitas dissentiet cu ius."
 	}
 	]
-}
+};
 
-var projects = {
+var projectHistory = {
 	"projects": [
 	{
 		"title": "Project1",

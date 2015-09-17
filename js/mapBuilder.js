@@ -15,7 +15,6 @@ function initializeMap() {
   function getLocationsFromResume() {
 
     var locations = [];
-
     locations.push(bio.contacts.location);
 
     for (var school in education.schools) {
@@ -68,11 +67,11 @@ function initializeMap() {
     });
     
     google.maps.event.addListener(marker, 'click', function() {
-      infowindow.open(map,marker);
+      infoWindow.open(map,marker);
     });
     
     bounds.extend(new google.maps.LatLng(lat, lon));
-    map.fitBounds(bounds);
+    //map.fitBounds(bounds);
     map.setCenter(bounds.getCenter());
   }
 }
