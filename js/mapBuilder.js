@@ -51,8 +51,8 @@ function initializeMap() {
 
   function createMapMarker(placeData) {
 
-    var lat = placeData.geometry.location.G;  
-    var lon = placeData.geometry.location.K;  
+    var lat = placeData.geometry.location.lat();  
+    var lng = placeData.geometry.location.lng();  
     var name = placeData.formatted_address;   
     var bounds = window.mapBounds;            
 
@@ -70,8 +70,8 @@ function initializeMap() {
       infoWindow.open(map,marker);
     });
     
-    bounds.extend(new google.maps.LatLng(lat, lon));
-    //map.fitBounds(bounds);
+    bounds.extend(new google.maps.LatLng(lat, lng));
+    map.fitBounds(bounds);
     map.setCenter(bounds.getCenter());
   }
 }
